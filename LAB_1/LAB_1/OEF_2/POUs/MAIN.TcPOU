@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{7adc2b83-ae5d-4018-a640-34dc7c7d6846}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	bled1 AT %Q*: BOOL := FALSE;
+	bsw1 AT %I*: BOOL := FALSE;
+	bsw2 AT %I*: BOOL := FALSE;
+	bled2 AT %Q*: BOOL := false;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[bled1 := NOT bsw2;
+bled2 := NOT bsw1;
+ ]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="10" Count="1" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
