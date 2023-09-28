@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{8682c1c0-01ec-4311-8c87-3f9f7d6ee914}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Ninput AT %I*: INT := 0;
+	buffer AT %Q*: Byte := 0;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[buffer := To_byte(F_Scale(Ninput,0,32767,0,15));]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -72,10 +72,13 @@
 				<Task Id="7" Priority="24" CycleTime="100000" AmsPort="354" AdtTasks="true">
 					<Name>PlcTask4</Name>
 				</Task>
+				<Task Id="8" Priority="25" CycleTime="100000" AmsPort="355" AdtTasks="true">
+					<Name>PlcTask5</Name>
+				</Task>
 			</Tasks>
 		</System>
 		<Plc>
-			<Project GUID="{4800A439-0B72-441A-AA76-A32AF885E356}" Name="OEF_1" PrjFilePath="OEF_1\OEF_1.plcproj" TmcFilePath="OEF_1\OEF_1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+			<Project Disabled="true" GUID="{4800A439-0B72-441A-AA76-A32AF885E356}" Name="OEF_1" PrjFilePath="OEF_1\OEF_1.plcproj" TmcFilePath="OEF_1\OEF_1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
 				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{CA90E018-00DE-BF53-4FF5-FB4619811E56}">
 					<Name>OEF_1 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -106,7 +109,7 @@
 					</TaskPouOids>
 				</Instance>
 			</Project>
-			<Project GUID="{D71E270D-3BDB-4C0E-A66F-48A6A3F9733F}" Name="OEF_2" PrjFilePath="OEF_2\OEF_2.plcproj" TmcFilePath="OEF_2\OEF_2.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+			<Project Disabled="true" GUID="{D71E270D-3BDB-4C0E-A66F-48A6A3F9733F}" Name="OEF_2" PrjFilePath="OEF_2\OEF_2.plcproj" TmcFilePath="OEF_2\OEF_2.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
 				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{9F109B7C-F1C9-DF8F-95B2-B86E8C9AA97E}">
 					<Name>OEF_2 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -141,7 +144,7 @@
 					</TaskPouOids>
 				</Instance>
 			</Project>
-			<Project GUID="{685BBC44-B99C-4541-A4E0-1490A415EA5F}" Name="OEF_3" PrjFilePath="OEF_3\OEF_3.plcproj" TmcFilePath="OEF_3\OEF_3.tmc" ReloadTmc="true" AmsPort="853" FileArchiveSettings="#x000e" SymbolicMapping="true">
+			<Project Disabled="true" GUID="{685BBC44-B99C-4541-A4E0-1490A415EA5F}" Name="OEF_3" PrjFilePath="OEF_3\OEF_3.plcproj" TmcFilePath="OEF_3\OEF_3.tmc" ReloadTmc="true" AmsPort="853" FileArchiveSettings="#x000e" SymbolicMapping="true">
 				<Instance Id="#x08502080" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{CC190044-62BF-BDF9-E2AD-653D71A8BE05}">
 					<Name>OEF_3 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -176,7 +179,7 @@
 					</TaskPouOids>
 				</Instance>
 			</Project>
-			<Project GUID="{17964149-AC59-454E-8C2F-041C9086383B}" Name="OEF_4" PrjFilePath="OEF_4\OEF_4.plcproj" TmcFilePath="OEF_4\OEF_4.tmc" ReloadTmc="true" AmsPort="854" FileArchiveSettings="#x000e" SymbolicMapping="true">
+			<Project Disabled="true" GUID="{17964149-AC59-454E-8C2F-041C9086383B}" Name="OEF_4" PrjFilePath="OEF_4\OEF_4.plcproj" TmcFilePath="OEF_4\OEF_4.tmc" ReloadTmc="true" AmsPort="854" FileArchiveSettings="#x000e" SymbolicMapping="true">
 				<Instance Id="#x085020c0" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{3B99A47D-7333-42F2-519D-D508CC1ECD14}">
 					<Name>OEF_4 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -222,7 +225,7 @@
 					</TaskPouOids>
 				</Instance>
 			</Project>
-			<Project GUID="{AFBEBF19-F50A-43F2-B249-B84BF69ED278}" Name="OEF_5" PrjFilePath="OEF_5\OEF_5.plcproj" TmcFilePath="OEF_5\OEF_5.tmc" ReloadTmc="true" AmsPort="855" FileArchiveSettings="#x000e" SymbolicMapping="true">
+			<Project Disabled="true" GUID="{AFBEBF19-F50A-43F2-B249-B84BF69ED278}" Name="OEF_5" PrjFilePath="OEF_5\OEF_5.plcproj" TmcFilePath="OEF_5\OEF_5.tmc" ReloadTmc="true" AmsPort="855" FileArchiveSettings="#x000e" SymbolicMapping="true">
 				<Instance Id="#x08502100" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{A1D158A6-F2B7-FC78-4BB8-B4FCB61BB1AF}">
 					<Name>OEF_5 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -260,6 +263,40 @@
 					</TaskPouOids>
 				</Instance>
 			</Project>
+			<Project GUID="{E415C650-AC48-4497-AF69-8843F004857F}" Name="OEF_6" PrjFilePath="OEF_6\OEF_6.plcproj" TmcFilePath="OEF_6\OEF_6.tmc" ReloadTmc="true" AmsPort="856" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502140" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{13430C10-5CB8-E941-6314-B7CA20862B74}">
+					<Name>OEF_6 Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="1">
+						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>MAIN.Ninput</Name>
+							<Type>INT</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>MAIN.buffer</Name>
+							<Type>BYTE</Type>
+						</Var>
+					</Vars>
+					<Contexts>
+						<Context>
+							<Id>0</Id>
+							<Name>PlcTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010080</OTCID>
+							</ManualConfig>
+							<Priority>25</Priority>
+							<CycleTime>10000000</CycleTime>
+						</Context>
+					</Contexts>
+					<TaskPouOids>
+						<TaskPouOid Prio="25" OTCID="#x08502141"/>
+					</TaskPouOids>
+				</Instance>
+			</Project>
 		</Plc>
 		<Io>
 			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="5.59.222.235.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
@@ -276,9 +313,6 @@
 				</AddressInfo>
 				<Image Id="1" AddrType="9" ImageType="3">
 					<Name>Image</Name>
-				</Image>
-				<Image Id="3" AddrType="10" ImageType="3">
-					<Name>Image-2</Name>
 				</Image>
 				<Box Id="1" BoxType="9099">
 					<Name>Term 1 (EK1200)</Name>
@@ -737,19 +771,21 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-20C1-0850-C020-500810000403}" Id="#x02030010"/>
-		<OwnerA Name="TIPC^OEF_4^OEF_4 Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.Bled1" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Outputs^MAIN.Bled2" VarB="Channel 3^Output"/>
-			</OwnerB>
-		</OwnerA>
+		<MappingInfo Identifier="{00000000-2141-0850-4021-500810000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^OEF_5^OEF_5 Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3062)">
-				<Link VarA="PlcTask Inputs^MAIN.Ninput" VarB="AI Standard Channel 1^Value"/>
-			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL4002)">
 				<Link VarA="PlcTask Outputs^MAIN.Noutput" VarB="AO Outputs Channel 1^Analog output"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="TIPC^OEF_6^OEF_6 Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2008)">
+				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 2^Output" Size="1" OffsA="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 3^Output" Size="1" OffsA="2"/>
+				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 4^Output" Size="1" OffsA="3"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3062)">
+				<Link VarA="PlcTask Inputs^MAIN.Ninput" VarB="AI Standard Channel 1^Value"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
