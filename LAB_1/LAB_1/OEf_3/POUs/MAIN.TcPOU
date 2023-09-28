@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{16a87b71-6577-44a5-a4a0-4b1ef7824d72}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Rood AT %Q*: BOOL := FALSE;
+	Orange AT %Q*: BOOL := false;
+	Alarm AT %Q*: BOOL := FALSE;
+	Headswitch AT %I*: BOOL := true;
+	SW3 AT %I*: BOOL := false;
+	SW4 AT %I*: BOOL := false;
+	SW5 AT %I*: BOOL := false;
+	SW2 AT %I*: BOOL := false;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Orange := Headswitch AND (SW3 OR SW4 OR SW5)AND (NOT SW2);
+Rood := Headswitch AND ((SW3 AND SW4) OR (SW3 AND SW5) OR (SW4 AND SW5))AND (NOT SW2);
+Alarm := Headswitch AND SW3 AND SW4 AND SW5 AND (NOT SW2);
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="6" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="8" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

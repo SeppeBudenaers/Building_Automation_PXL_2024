@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{b8c772b6-c97f-40b6-a9b4-2686cc7667f5}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Apotentiometer AT %I*: INT := 0;
+	Npotentiometer AT %I*: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Apotentiometer := LREAL_TO_INT (F_Scale(Npotentiometer, 0,32767,0,100));]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
