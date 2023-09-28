@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{3d988d2d-8d1f-4a2f-9fe1-8dd7d0f20e23}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Noutput AT %Q*: INT := 0;
+	Ninput AT %I*: INT := 0;
+	buffer AT %Q*: INT := 0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[buffer := LREAL_TO_INT (F_Scale(Ninput,0,32767,0,100));
+Noutput :=LREAL_TO_INT (F_Scale(buffer,-100,2000,0,32767));
+	
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="11" Count="0" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="6" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

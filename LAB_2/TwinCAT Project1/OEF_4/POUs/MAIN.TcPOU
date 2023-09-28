@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{cf205e4a-042c-4c82-8c4c-241ce7eda38d}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Ngevraagedwarden AT %I*: INT := 0;
+	Ngemetewarden AT %I*: INT;
+	NScale AT %I*: INT := 100;
+	Bled1 AT %Q*: BOOL := 0;
+	Bled2 AT %q*: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Bled1 := (Ngevraagedwarden - 10)<= LREAL_TO_INT (F_Scale(Ngemetewarden, 0,32767,0,NScale))AND LREAL_TO_INT (F_Scale(Ngemetewarden, 0,32767,0,NScale)) <= (Ngevraagedwarden - 10);
+Bled2 := NOT Bled1;
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="11" Count="1" />
+      <LineId Id="14" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
