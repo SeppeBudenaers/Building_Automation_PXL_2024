@@ -75,6 +75,9 @@
 				<Task Id="8" Priority="25" CycleTime="100000" AmsPort="355" AdtTasks="true">
 					<Name>PlcTask5</Name>
 				</Task>
+				<Task Id="9" Priority="26" CycleTime="100000" AmsPort="356" AdtTasks="true">
+					<Name>PlcTask6</Name>
+				</Task>
 			</Tasks>
 		</System>
 		<Plc>
@@ -295,6 +298,18 @@
 					<TaskPouOids>
 						<TaskPouOid Prio="25" OTCID="#x08502141"/>
 					</TaskPouOids>
+				</Instance>
+			</Project>
+			<Project GUID="{C8620B7E-C707-4C83-A910-4621F2F72B1F}" Name="OEF_9" PrjFilePath="OEF_9\OEF_9.plcproj" TmcFilePath="OEF_9\OEF_9.tmc" ReloadTmc="true" AmsPort="857" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502180" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+					<Name>OEF_9 Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Contexts>
+						<Context>
+							<Id>1</Id>
+							<Name>Default</Name>
+						</Context>
+					</Contexts>
 				</Instance>
 			</Project>
 		</Plc>

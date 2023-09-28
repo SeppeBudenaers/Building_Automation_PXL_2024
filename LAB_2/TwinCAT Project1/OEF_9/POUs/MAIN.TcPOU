@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{81bb1170-a19d-4c3c-bcd2-a0d8dd6d0100}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	TotalOutput AT %Q*: INT;
+	Vat1 AT %I*: INT := 0;
+	Vat2 AT %I*: INT := 0;
+	Vat3 AT %I*: INT := 0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[TotalOutput := (Vat1 + Vat2 + Vat3);]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

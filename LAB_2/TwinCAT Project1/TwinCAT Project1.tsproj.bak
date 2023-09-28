@@ -771,15 +771,7 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2101-0850-0021-500831000403}" Id="#x02030020"/>
-		<MappingInfo Identifier="{00000000-20C1-0850-C020-500810000403}" Id="#x02030010"/>
-		<MappingInfo Identifier="{08502141-0010-0304-4021-500810000403}" Id="#x02030030" Watchdog="04000000040000000400000004000000"/>
-		<OwnerA Name="TIPC^OEF_4^OEF_4 Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.Bled1" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Outputs^MAIN.Bled2" VarB="Channel 3^Output"/>
-			</OwnerB>
-		</OwnerA>
+		<MappingInfo Identifier="{00000000-2141-0850-4021-500810000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^OEF_5^OEF_5 Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL4002)">
 				<Link VarA="PlcTask Outputs^MAIN.Noutput" VarB="AO Outputs Channel 1^Analog output"/>
@@ -787,10 +779,10 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 		</OwnerA>
 		<OwnerA Name="TIPC^OEF_6^OEF_6 Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 2^Output"/>
-				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 4^Output" Size="1" OffsA="1"/>
-				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 5^Output" Size="1" OffsA="2"/>
-				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 6^Output" Size="1" OffsA="3"/>
+				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 2^Output" Size="1" OffsA="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 3^Output" Size="1" OffsA="2"/>
+				<Link VarA="PlcTask Outputs^MAIN.buffer" VarB="Channel 4^Output" Size="1" OffsA="3"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3062)">
 				<Link VarA="PlcTask Inputs^MAIN.Ninput" VarB="AI Standard Channel 1^Value"/>
