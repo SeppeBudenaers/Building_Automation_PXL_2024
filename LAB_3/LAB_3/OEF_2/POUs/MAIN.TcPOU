@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{d58108f7-cd21-421d-97a3-3f83c719bd6d}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	bStart AT %I*: BOOL := FALSE;
+	bMachine AT %Q*: BOOL := FALSE;
+	fbStart: TON := (PT := TIME#5s0ms);
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbStart(IN:= bStart);
+bMachine S= fbStart.Q;]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="13" Count="0" />
+      <LineId Id="22" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
