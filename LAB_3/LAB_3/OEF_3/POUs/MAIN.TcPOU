@@ -3,7 +3,7 @@
   <POU Name="MAIN" Id="{d2ddc2f6-b1b6-4f6a-8404-8d60b16ec7ea}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	fbTimer: TP := (PT := TIME#3s0ms);
+	fbTimer: TOF := (PT := TIME#3s0ms);
 	bKnop AT %I*: BOOL := false;
 	bLED1 AT %Q*: BOOL := FALSE;
 END_VAR
