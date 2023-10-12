@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{29ad1771-f66d-4994-99ae-8c562b978f26}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	bLED1 AT %Q*: BOOL;
+	fbTON: TON := (PT := TIME#100MS);
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbTON(IN:= not(fbTON.Q), Q=>bLED1);]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="21" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{1f04f9b4-23ec-4d12-9e5b-c3395f948632}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	fbTP1: TP := (PT := TIME#500MS);
+	fbTP2: TP := (PT := TIME#500MS);
+	bLED1 AT %Q*: BOOL := false;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbTP1(IN:= not(fbTP2.Q), Q=> bLED1);
+fbTP2(IN:= not(fbTP1.Q));]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="34" Count="0" />
+      <LineId Id="37" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
