@@ -8,23 +8,24 @@ VAR
 	bLED1 AT %Q*: BOOL := FALSE;
 	bBuffer AT %Q*: BOOL := false;
 	bToggle AT %Q* : BOOL := FALSE;
-	fbTrigger: F_TRIG;
+	fbTrigger: R_TRIG;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[fbTrigger(CLK:= bKnop);
-IF fbTimer.Q AND bKnop THEN
-	bLED1 := false;
-ELSE
-	fbTimer(IN:= TRUE, PT := T#3S, Q=> bLED1);
-END_IF]]></ST>
+IF fbTimer.Q AND fbTrigger.Q THEN
+	fbTimer.PT := T#0S;
+ELSIF NOT(fbTimer.Q) AND fbTrigger.Q THEN
+	fbTimer.PT := T#3S;	
+END_IF
+fbTimer(IN:= fbTrigger.Q, Q=> bLED1);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
+      <LineId Id="60" Count="0" />
+      <LineId Id="68" Count="0" />
+      <LineId Id="61" Count="2" />
       <LineId Id="26" Count="0" />
-      <LineId Id="24" Count="0" />
-      <LineId Id="43" Count="0" />
-      <LineId Id="52" Count="1" />
-      <LineId Id="50" Count="0" />
+      <LineId Id="54" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
