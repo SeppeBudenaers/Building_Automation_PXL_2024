@@ -18,7 +18,7 @@ VAR
 	FB_Lights: FB_Light;
 	fbWarning: TOF;
 	fbBlinking: TOF;
-	fbTON: TON := (PT := TIME#100MS);
+	fbTON: TON := (PT := TIME#500MS);
 	bLED2 AT %Q*: BOOL;
 END_VAR
 ]]></Declaration>
@@ -27,9 +27,8 @@ END_VAR
 FB_Lights(bOn:=  , bOff:= fbtimer.q, bToggle:= bTriggerShort, bLight=>bLed1 );
 FB_Timer_Setting(CU:= bButton2, CD:= bButton3 );
 fbtimer(IN:= bLed1 AND NOT bTriggerLong , PT:=  TO_TIME(FB_Timer_Setting.CV * 1000 + 3*1000));
-fbWarning(IN:= bTriggerShort OR bTriggerLong , PT:= TO_TIME(FB_Timer_Setting.CV * 1000));
-fbBlinking(IN:= fbWarning.Q, PT:= T#3S);
-IF (NOT fbWarning.Q AND bLed1) AND fbBlinking.Q THEN
+fbBlinking(IN:= fbTimer.ET = TO_TIME(fb_timer_setting.CV * 1000), PT:= T#3S);
+IF fbBlinking.Q THEN
 	fbTON(IN:= NOT(fbTON.Q), Q=>bLED2);
 END_IF
 ]]></ST>
@@ -39,7 +38,6 @@ END_IF
       <LineId Id="14" Count="0" />
       <LineId Id="61" Count="0" />
       <LineId Id="59" Count="0" />
-      <LineId Id="68" Count="0" />
       <LineId Id="75" Count="0" />
       <LineId Id="70" Count="2" />
       <LineId Id="60" Count="0" />
