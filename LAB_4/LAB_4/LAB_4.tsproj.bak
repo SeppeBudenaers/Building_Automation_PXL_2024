@@ -54,48 +54,42 @@
 		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ff00bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ff00bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{82591366-88DF-4ED5-B312-7573C79C2BD1}" TargetNetId="5.59.222.235.1.1" ShowHideConfigurations="#x6">
+	<Project ProjectGUID="{DA01852D-2B7C-495B-B293-145D75A5F8B3}" TargetNetId="5.59.222.235.1.1" ShowHideConfigurations="#x6">
 		<System>
 			<Tasks>
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
-				<Task Id="4" Priority="21" CycleTime="100000" AmsPort="351" AdtTasks="true">
-					<Name>PlcTask1</Name>
-				</Task>
-				<Task Id="5" Priority="22" CycleTime="100000" AmsPort="352" AdtTasks="true">
-					<Name>PlcTask2</Name>
-				</Task>
-				<Task Id="6" Priority="23" CycleTime="100000" AmsPort="353" AdtTasks="true">
-					<Name>PlcTask3</Name>
-				</Task>
-				<Task Id="7" Priority="24" CycleTime="100000" AmsPort="354" AdtTasks="true">
-					<Name>PlcTask4</Name>
-				</Task>
-				<Task Id="8" Priority="25" CycleTime="100000" AmsPort="355" AdtTasks="true">
-					<Name>PlcTask5</Name>
-				</Task>
-				<Task Id="9" Priority="26" CycleTime="100000" AmsPort="356" AdtTasks="true">
-					<Name>PlcTask6</Name>
-				</Task>
 			</Tasks>
 		</System>
 		<Plc>
-			<Project Disabled="true" GUID="{55D39604-EC3E-48F9-A9E0-0334D3427B7C}" Name="OEF_1" PrjFilePath="OEF_1\OEF_1.plcproj" TmcFilePath="OEF_1\OEF_1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_1\OEF_1.tmc" TmcHash="{37F73ED0-1590-2E14-4CDB-48CF4E832C41}">
+			<Project GUID="{45480720-434A-4554-B59B-A4DD8682A66F}" Name="OEF_1" PrjFilePath="OEF_1\OEF_1.plcproj" TmcFilePath="OEF_1\OEF_1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_1\OEF_1.tmc" TmcHash="{06DB4644-4E69-A414-A268-22A0E576496C}">
 					<Name>OEF_1 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
-							<Name>MAIN.bKeuken</Name>
+							<Name>MAIN.BButton1</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.bButton2</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.bButton3</Name>
 							<Type>BOOL</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
 						<Var>
-							<Name>MAIN.bLED1</Name>
+							<Name>MAIN.bLed1</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.bLED2</Name>
 							<Type>BOOL</Type>
 						</Var>
 					</Vars>
@@ -112,170 +106,6 @@
 					</Contexts>
 					<TaskPouOids>
 						<TaskPouOid Prio="20" OTCID="#x08502001"/>
-					</TaskPouOids>
-				</Instance>
-			</Project>
-			<Project Disabled="true" GUID="{57BFC2D9-160D-4841-A2DC-2DD01866444D}" Name="OEF_2" PrjFilePath="OEF_2\OEF_2.plcproj" TmcFilePath="OEF_2\OEF_2.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_2\OEF_2.tmc" TmcHash="{E27A8E86-72DD-D204-CA21-0DBAA2979B89}">
-					<Name>OEF_2 Instance</Name>
-					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="1">
-						<Name>PlcTask Inputs</Name>
-						<Var>
-							<Name>MAIN.bStart</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>MAIN.bMachine</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Contexts>
-						<Context>
-							<Id>0</Id>
-							<Name>PlcTask</Name>
-							<ManualConfig>
-								<OTCID>#x02010040</OTCID>
-							</ManualConfig>
-							<Priority>21</Priority>
-							<CycleTime>10000000</CycleTime>
-						</Context>
-					</Contexts>
-					<TaskPouOids>
-						<TaskPouOid Prio="21" OTCID="#x08502041"/>
-					</TaskPouOids>
-				</Instance>
-			</Project>
-			<Project Disabled="true" GUID="{C5AE5F67-6FB8-45DA-B793-951CF1ED6FA7}" Name="OEF_3" PrjFilePath="OEF_3\OEF_3.plcproj" TmcFilePath="OEF_3\OEF_3.tmc" ReloadTmc="true" AmsPort="853" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502080" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_3\OEF_3.tmc" TmcHash="{6C0A2511-A606-FEC7-EA1D-4CA3D2E0A905}">
-					<Name>OEF_3 Instance</Name>
-					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="1">
-						<Name>PlcTask Inputs</Name>
-						<Var>
-							<Name>MAIN.bKnop</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>MAIN.bLED1</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Contexts>
-						<Context>
-							<Id>0</Id>
-							<Name>PlcTask</Name>
-							<ManualConfig>
-								<OTCID>#x02010060</OTCID>
-							</ManualConfig>
-							<Priority>23</Priority>
-							<CycleTime>10000000</CycleTime>
-						</Context>
-					</Contexts>
-					<TaskPouOids>
-						<TaskPouOid Prio="23" OTCID="#x08502081"/>
-					</TaskPouOids>
-				</Instance>
-			</Project>
-			<Project Disabled="true" GUID="{610ED596-06C7-40DB-A038-B4BFFE4C3EDC}" Name="OEF_4" PrjFilePath="OEF_4\OEF_4.plcproj" TmcFilePath="OEF_4\OEF_4.tmc" ReloadTmc="true" AmsPort="854" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x085020c0" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_4\OEF_4.tmc" TmcHash="{E778881F-5643-E921-3580-82C88235A505}">
-					<Name>OEF_4 Instance</Name>
-					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="1">
-						<Name>PlcTask Inputs</Name>
-						<Var>
-							<Name>MAIN.bKnop</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>MAIN.bLED1</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bBuffer</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bToggle</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Contexts>
-						<Context>
-							<Id>0</Id>
-							<Name>PlcTask</Name>
-							<ManualConfig>
-								<OTCID>#x02010070</OTCID>
-							</ManualConfig>
-							<Priority>24</Priority>
-							<CycleTime>10000000</CycleTime>
-						</Context>
-					</Contexts>
-					<TaskPouOids>
-						<TaskPouOid Prio="24" OTCID="#x085020c1"/>
-					</TaskPouOids>
-				</Instance>
-			</Project>
-			<Project GUID="{47F6D807-39B1-4919-81DB-B2A95921F55D}" Name="OEF_5" PrjFilePath="OEF_5\OEF_5.plcproj" TmcFilePath="OEF_5\OEF_5.tmc" ReloadTmc="true" AmsPort="855" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502100" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_5\OEF_5.tmc" TmcHash="{66179FAC-F226-EC1C-28AA-C31C713841B1}">
-					<Name>OEF_5 Instance</Name>
-					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>MAIN.bLED1</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Contexts>
-						<Context>
-							<Id>0</Id>
-							<Name>PlcTask</Name>
-							<ManualConfig>
-								<OTCID>#x02010080</OTCID>
-							</ManualConfig>
-							<Priority>25</Priority>
-							<CycleTime>10000000</CycleTime>
-						</Context>
-					</Contexts>
-					<TaskPouOids>
-						<TaskPouOid Prio="25" OTCID="#x08502101"/>
-					</TaskPouOids>
-				</Instance>
-			</Project>
-			<Project GUID="{72A6B66E-8E12-41CE-9839-05A4E7E3D337}" Name="OEF_6" PrjFilePath="OEF_6\OEF_6.plcproj" TmcFilePath="OEF_6\OEF_6.tmc" ReloadTmc="true" AmsPort="856" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502140" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_6\OEF_6.tmc" TmcHash="{C523DD0A-69FF-D91D-4194-798E2C0BCCAA}">
-					<Name>OEF_6 Instance</Name>
-					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="2" AreaNo="1">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>MAIN.bLED1</Name>
-							<Type>BOOL</Type>
-						</Var>
-					</Vars>
-					<Contexts>
-						<Context>
-							<Id>0</Id>
-							<Name>PlcTask</Name>
-							<ManualConfig>
-								<OTCID>#x02010090</OTCID>
-							</ManualConfig>
-							<Priority>26</Priority>
-							<CycleTime>10000000</CycleTime>
-						</Context>
-					</Contexts>
-					<TaskPouOids>
-						<TaskPouOid Prio="26" OTCID="#x08502141"/>
 					</TaskPouOids>
 				</Instance>
 			</Project>
@@ -750,27 +580,38 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				</Box>
 				<EtherCAT/>
 			</Device>
+			<Device Id="3" DevType="121">
+				<Name>Device 3 (NOV-DP-RAM)</Name>
+				<AddressInfo>
+					<Isa>
+						<Address>-267386880</Address>
+						<Size>131072</Size>
+					</Isa>
+				</AddressInfo>
+				<Vars VarGrpType="1" InsertType="1">
+					<Name>Inputs</Name>
+				</Vars>
+				<Vars VarGrpType="2" InsertType="1">
+					<Name>Outputs</Name>
+				</Vars>
+				<Image Id="4" ImageFlags="#x00000042" AddrType="12" ImageType="5">
+					<Name>Image</Name>
+				</Image>
+				<DpRam/>
+			</Device>
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2101-0850-0021-500810000403}" Id="#x02030010"/>
-		<MappingInfo Identifier="{08502141-0010-0304-4021-500810000403}" Id="#x02030020" Watchdog="04000000040000000400000004000000"/>
-		<OwnerA Name="TIPC^OEF_4^OEF_4 Instance">
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>
+		<OwnerA Name="TIPC^OEF_1^OEF_1 Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL1008)">
-				<Link VarA="PlcTask Inputs^MAIN.bKnop" VarB="Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^MAIN.BButton1" VarB="Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^MAIN.bButton2" VarB="Channel 3^Input"/>
+				<Link VarA="PlcTask Inputs^MAIN.bButton3" VarB="Channel 4^Input"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.bLED1" VarB="Channel 1^Output"/>
-			</OwnerB>
-		</OwnerA>
-		<OwnerA Name="TIPC^OEF_5^OEF_5 Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.bLED1" VarB="Channel 2^Output"/>
-			</OwnerB>
-		</OwnerA>
-		<OwnerA Name="TIPC^OEF_6^OEF_6 Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2008)">
-				<Link VarA="PlcTask Outputs^MAIN.bLED1" VarB="Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLED2" VarB="Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed1" VarB="Channel 1^Output"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
