@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{2d2c30b1-4b8e-40fd-b0de-3d5b86e5415d}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	iCurrentTemp : INT;
+	iSetTemp : INT;
+	bheating AT %Q*: BOOL := FALSE;
+	iInputsettemp AT %I*: INT;
+	iInputcurrenttemp AT %I*: INT;
+	
+	fb1HZ: TON := (PT := TIME#1S0MS);
+	TemperatureTable: ARRAY[1..20] OF INT := [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+	Index: INT := 1;
+	sr: TON;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[iSetTemp :=  LREAL_TO_INT(F_Scale(iInputsettemp,0,32767,10,30));
+iCurrentTemp :=  LREAL_TO_INT(F_Scale(iInputcurrenttemp,0,32767,-30,40));
+fb1HZ(IN:= NOT(fb1HZ.Q));
+IF fb1HZ.Q THEN
+	TemperatureTable[Index] := iCurrentTemp;
+	Index := Index +1;
+	IF index = 21 THEN
+		index := 1;
+	END_IF
+END_IF
+IF iSetTemp > iCurrentTemp  THEN
+	bheating := TRUE;
+ELSE
+	bheating := FALSE;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="39" Count="1" />
+      <LineId Id="54" Count="0" />
+      <LineId Id="51" Count="2" />
+      <LineId Id="41" Count="0" />
+      <LineId Id="6" Count="0" />
+      <LineId Id="17" Count="1" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="57" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
