@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{77178a98-e6bc-4fb4-997d-3f8f9a3c6e62}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	iCurrentTemp : INT;
+	iSetTemp : INT;
+	bheating AT %Q*: BOOL := false;
+	iInputsettemp AT %I*: INT;
+	iInputcurrenttemp AT %I*: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[iSetTemp :=  LREAL_TO_INT(F_Scale(iInputsettemp,0,32767,10,30));
+iCurrentTemp :=  LREAL_TO_INT(F_Scale(iInputcurrenttemp,0,32767,-30,40));
+IF iSetTemp > iCurrentTemp  THEN
+	bheating := TRUE;
+ELSE
+	bheating := FALSE;
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="6" Count="0" />
+      <LineId Id="17" Count="1" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="19" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -64,7 +64,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{45480720-434A-4554-B59B-A4DD8682A66F}" Name="OEF_1" PrjFilePath="OEF_1\OEF_1.plcproj" TmcFilePath="OEF_1\OEF_1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_1\OEF_1.tmc" TmcHash="{06DB4644-4E69-A414-A268-22A0E576496C}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="OEF_1\OEF_1.tmc" TmcHash="{BCF9BCAA-8634-7B4A-63A7-CEE9DEE89806}">
 					<Name>OEF_1 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
